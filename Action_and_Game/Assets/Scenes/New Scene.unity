@@ -214,7 +214,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &232533006
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -279,7 +279,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 5.5000005, z: 0}
   m_LocalScale: {x: 0.3845587, y: 0.47687536, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 683344112}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &232533008
@@ -291,11 +292,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 232533003}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e01f5cb334a4a146acff7279f4bbae4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7eead07c0462b0941b75b1f11fdb3139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 232533005}
   isGrounded: 0
+  speed: 2
 --- !u!1 &683344109
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,12 +383,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683344109}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: -10}
+  m_LocalScale: {x: 2.6003833, y: 2.096984, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 232533007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2147360901
 GameObject:
@@ -512,8 +514,8 @@ Transform:
   m_GameObject: {fileID: 2147360901}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: -5.36, z: 0}
-  m_LocalScale: {x: 15.4767275, y: 5.7231, z: 1}
+  m_LocalPosition: {x: 0, y: -5.36, z: 0}
+  m_LocalScale: {x: 200, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -522,6 +524,5 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 683344112}
   - {fileID: 2147360904}
   - {fileID: 232533007}

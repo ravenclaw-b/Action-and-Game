@@ -18,15 +18,15 @@ public class movement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-{
-    if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
     {
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
         rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-    }
+        }
 
     float horizontalInput = Input.GetAxisRaw("Horizontal");
     rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
-}
+    }
 
 
     // Ground check
